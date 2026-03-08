@@ -80,7 +80,31 @@ JS主要用于通过脚本控制网页的行为，而XML主要用于传输与存
 
 ## 表单元素  
 
+以下为部分HTML5标准新增的表单元素：  
 
+- `<datalist>`/`</datalist>`：定义了输入域的选项列表，规定输入域应有自动完成功能，即自动完成域，当用户在该域进行输入时，浏览器将显示可供填写的选项，例：  
+
+```
+<input list="browsers">
+ 
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>  
+
+</input>
+```
+
+以上即为一组由`<datalist>`标签得到的以下拉列表形式输入的表单元素，`<option>`定义了下拉列表中的选项，`value`属性则定义了该选项的选项名。  
+
+> *注意：`<input>`的`list`属性值与`<datalist>`的`id`属性值相同。*  
+
+- `<output>`：用于输出计算结果，大多依赖于JS脚本。  
+
+以下为部分HTML5标准新增的表单属性：
 
 
 
