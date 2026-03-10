@@ -106,5 +106,20 @@ JS主要用于通过脚本控制网页的行为，而XML主要用于传输与存
 
 以下为部分HTML5标准新增的表单属性：
 
+- `autocomplete`：属性值只有"on"或"off"，"on"规定输入域应有自动完成功能，此处自动完成域与下拉列表不同，指当用户在该域进行输入时，浏览器将显示用户曾输入过的内容，用户可自行选择是否采用历史输入内容，如网页登录界面记录历史账号，“记住密码”功能等。  
+
+> *注意：`autocomplete`属性可能在`form`域中为"on"，而在`input`域中"off"。*  
+
+- `novalidate`：无属性值，用于设置浏览器不对表单进行验证，如`type="email"`时，浏览器将不会检验输入内容是否为`···@···`，这便于开发者完全控制表单验证的逻辑。  
+- `autofocus`：仅`<form>`可用，无属性值，规定在页面加载时，域自动获得焦点，即默认用户打开网页时就已点击带有此属性的输入域。  
+- `form`：仅`<input>`可用，规定某表单外的输入域所属的表单，属性值为所引用表单的`id`属性值。  
+
+> *注意：一个输入域仅能关联一个表单。*  
+
+- `formaction`：仅`<input>`可用，与`<form>`的`action`属性用法相同，会覆盖所属`<form>`元素的`action`属性（仅该输入域）。  
+- `formenctype`/`formmethod`/`formnovalidate`/`formtarget`：仅`<input>`可用，与`formaction`相同，对“form”后相对应的`<form>`元素的属性起覆盖作用。 
+
+> *注意：仅用于`type="submit"`与`type="image"`（`formnovalidate`仅用于`type="submit"`）。*  
+
 
 
