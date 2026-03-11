@@ -100,7 +100,7 @@ JS主要用于通过脚本控制网页的行为，而XML主要用于传输与存
 
 以上即为一组由`<datalist>`标签得到的以下拉列表形式输入的表单元素，`<option>`定义了下拉列表中的选项，`value`属性则定义了该选项的选项名。  
 
-> *注意：`<input>`的`list`属性值与`<datalist>`的`id`属性值相同。*  
+> *注意：`list`属性用于规定输入域的`datalist`，其属性值与`<datalist>`的`id`属性值相同。*  
 
 - `<output>`：用于输出计算结果，大多依赖于JS脚本。  
 
@@ -121,5 +121,10 @@ JS主要用于通过脚本控制网页的行为，而XML主要用于传输与存
 
 > *注意：仅用于`type="submit"`与`type="image"`（`formnovalidate`仅用于`type="submit"`）。*  
 
-
+- `height`/`width`：仅`input`可用，规定`type="image"`的图像高度与宽度。  
+- `min`/`max`：仅`input`可用，用于为包含数字或日期的`type`（如`"date"`，`"number"`等）规定约束。  
+- `multiple`：无属性值，仅`input`可用，规定输入域中可包含多个值，仅用于`type="email"`与`type="file"`。  
+- `placeholder`：用户点击输入域前，在输入域内为用户提供一种提示，提示内容为对期望输入内容的描述，属性值为提示文本。  
+- `required`：无属性值，仅`input`可用，规定用户提交时输入域不得为空。  
+- `step`：仅`input`可用，用于为包含数字或日期的`type`（如`"date"`，`"number"`等）规定合法的数字间隔，如`step="2"`，则合法的输入值为2的倍数。  
 
