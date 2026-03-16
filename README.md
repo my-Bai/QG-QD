@@ -2,5 +2,5 @@
 ## 导览目录  
 ### Note  
 1.HTML标签基础  
-2.HTML5
+2.HTML5  
 3.CSS样式基础
