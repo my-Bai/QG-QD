@@ -158,7 +158,7 @@ CSS可以为HTML元素设置背景色（background-color），文本颜色（col
 
 例：`background: #ff0000 url("image.jpg") repeat-x fixed center top`  
 
-> *注意：属性值之一可不定义，只需要顺序正确即可。*  
+> *注意：属性值可部分不定义，只需要顺序正确即可。*  
 
 ## CSS边框  
 
@@ -248,6 +248,52 @@ CSS可以为HTML元素设置背景色（background-color），文本颜色（col
 `font-size`属性定义了字体大小，属性值一般以像素（`px`）为单位。  
 
 ### 粗细  
+
+`font-weight`属性定义了字体粗细，有如下几种属性值：  
+
+- `normal`：正常字体。  
+- `bold`：粗体。  
+- `bolder`：特粗体。  
+- `lighter`：细体。  
+- `xx（数字）`：数字大小表示字体粗细程度，如`400`对应`normal`，`700`对应`bold`。
+
+> *注意：数字属性值后不加单位，实际应用中数字属性值应用最广泛。*  
+
+### 样式  
+
+`font-style`属性定义了文字样式，如属性值为`normal`时文本为正常字体，而为`itatic`时文本则为斜体。  
+
+> *注意：一般我们运用此属性不是为了将正常字体变成斜体，而是为了将斜体恢复正常字体。*  
+
+### 属性简写  
+
+如需缩短代码，可以在一个`font`属性中指定上述所有字体属性，其输入顺序为：  
+
+1.`font-style`  
+
+2.`font-weight`  
+
+3.`font-size`  
+
+4.`font-family`  
+
+> *注意：`font-size`与`font-family`属性必须保留。*  
+
+## CSS文本  
+
+### 颜色  
+
+`color`属性定义了文本的颜色。  
+
+### 对齐  
+
+`text-align`属性定义了文本内容的水平对齐方式，其属性值有三种：  
+
+- `left`：靠左对齐（默认）  
+- `right`：靠右对齐  
+- `center`：居中对齐。  
+
+### 装饰  
 
 
 
