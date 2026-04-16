@@ -73,6 +73,18 @@ CSS选择器共有五类：
 
   行内样式，又称内联样式，可用做被单个元素应用的唯一的样式，需要在相关元素的`style`属性中对元素的样式进行定义，例：`<h1 style="color:red;font-size:14px">`。  
 
+## CSS属性书写顺序  
+
+CSS属性设置时建议遵循以下顺序：  
+
+1.布局定位属性，如`display`，`position`，`float`，`clear`，`visibility`，`overflow`等。  
+
+2.自身属性，如`width`，`height`，`margin`，`padding`，`border`，`background`等。  
+
+3.文本属性，如`color`，`font`，`text-decoration`，`text-align`，`vertical-align`，`white-space`，`break-word`等。  
+
+4.其他属性，如`content`，`cursor`，`border-radius`，`box-shadow`，`text-shadow`等。  
+
 ## CSS三大特性  
 
 - 层叠性  
